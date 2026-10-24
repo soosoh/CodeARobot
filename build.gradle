@@ -1,0 +1,19 @@
+plugins {
+    id "edu.wpi.first.GradleRIO" version "2025.1.1"
+}
+
+group = "edu.wpi.first.wpilibj"
+archivesBaseName = "RobotCode"
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+dependencies {
+    implementation gradleRIO.java()
+    implementation edu.wpi.first.wpilibj.wpilibj()
+    implementation edu.wpi.first.wpilibj.wpilibjSim()
+    implementation edu.wpi.first.wpilibj.wpiutil()
+}
